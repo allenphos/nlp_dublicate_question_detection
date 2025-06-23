@@ -140,9 +140,8 @@ This project demonstrated the effectiveness of combining classical machine learn
 - 📌 Deploy the best-performing BERT model via a simple API (Streamlit).
 - 🧪 Explore other transformer architectures (e.g., RoBERTa, DeBERTa) for further performance gains.
 - 📈 Conduct error analysis to identify recurring patterns in false positives/negatives.
-- 💬 Integrate human feedback loop to improve predictions with user input.
 - 📦 Package the pipeline into a modular, reusable framework for future NLP tasks.
--  ⚙️ Implement regularization techniques (such as Dropout, Early Stopping, or L2) to reduce overfitting and improve model generalization.
+- ⚙️ Implement regularization techniques (such as Dropout, Early Stopping, or L2) to reduce overfitting and improve model generalization.
 
 ---
 
