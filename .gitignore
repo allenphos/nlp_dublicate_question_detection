@@ -1,0 +1,31 @@
+# Credentials and secrets
+creds.json
+.env
+*.env
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Jupyter
+*.ipynb_checkpoints
+
+# Logs
+*.log
+
+# VSCode
+.vscode/
+
+# Ignore heavy data files and embeddings
+*.npy
+*.pt
+*.joblib
+*.h5
+*.log
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+.env
+*.env
+*.csv
+*.xlsx

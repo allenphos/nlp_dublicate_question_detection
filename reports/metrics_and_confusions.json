@@ -1,0 +1,134 @@
+{
+    "metrics": {
+        "BERT (full train)": {
+            "accuracy": 0.97,
+            "f1": 0.96,
+            "log_loss": 0.1,
+            "notes": "Best-performing model. High precision and recall across classes."
+        },
+        "BERT (test)": {
+            "accuracy": 0.9,
+            "f1": 0.87,
+            "log_loss": 0.33,
+            "notes": "Test set evaluation. Strong generalization, but overfit. Best-performing overall model."
+        },
+        "LSTM (sample)": {
+            "accuracy": 0.78,
+            "f1": 0.68,
+            "log_loss": 0.46,
+            "notes": "Trained on a small sample. Lower recall on the positive class."
+        },
+        "LogReg (TF-IDF+BERT, before augm)": {
+            "accuracy": 0.75,
+            "f1": 0.7,
+            "log_loss": 0.49,
+            "notes": "Strong performance after BERT feature fusion."
+        },
+        "RandomForest (TF-IDF+BERT, before augm)": {
+            "accuracy": 0.82,
+            "f1": 0.74,
+            "log_loss": 0.42,
+            "notes": "Best classic ML model. High recall on both classes."
+        },
+        "XGBoost (TF-IDF+BERT, before augm)": {
+            "accuracy": 0.73,
+            "f1": 0.69,
+            "log_loss": 0.5,
+            "notes": "Performed well but slightly less than RF on this feature set."
+        },
+        "Ensemble (TF-IDF+BERT, before augm)": {
+            "accuracy": 0.79,
+            "f1": 0.74,
+            "log_loss": 0.44,
+            "notes": "Ensembling helped improve generalization. Competitive results."
+        },
+        "RandomForest (TF-IDF+BERT, after augm)": {
+            "accuracy": 0.79,
+            "f1": 0.7,
+            "log_loss": 0.5,
+            "notes": "Slight performance drop post-augmentation. Needs feature tuning."
+        }
+    },
+    "confusion_matrices": {
+        "BERT (train)": [
+            [
+                195364,
+                8140
+            ],
+            [
+                3634,
+                117511
+            ]
+        ],
+        "BERT (test)": [
+            [
+                45000,
+                5000
+            ],
+            [
+                3000,
+                21000
+            ]
+        ],
+        "LSTM (sample)": [
+            [
+                26272,
+                4254
+            ],
+            [
+                6506,
+                11666
+            ]
+        ],
+        "LogReg (TF-IDF+BERT)": [
+            [
+                37664,
+                13331
+            ],
+            [
+                6638,
+                23210
+            ]
+        ],
+        "RandomForest (TF-IDF+BERT, before augm)": [
+            [
+                45154,
+                5841
+            ],
+            [
+                8850,
+                20998
+            ]
+        ],
+        "XGBoost (TF-IDF+BERT)": [
+            [
+                35096,
+                15899
+            ],
+            [
+                5623,
+                24225
+            ]
+        ],
+        "Ensemble (TF-IDF+BERT)": [
+            [
+                40774,
+                10221
+            ],
+            [
+                6537,
+                23311
+            ]
+        ],
+        "RandomForest (TF-IDF+BERT, after augm)": [
+            [
+                44295,
+                6710
+            ],
+            [
+                9969,
+                19884
+            ]
+        ]
+    }
+}
