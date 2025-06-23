@@ -32,14 +32,12 @@ Classify whether two questions are duplicates by analyzing their semantic simila
 - **Jupyter Notebooks** — for interactive development, prototyping, and documentation
 - **Scikit-learn** — classical ML models, metrics, and pipelines
 - **Pandas / NumPy** — data manipulation and numerical operations
-- **Matplotlib / Seaborn** — visualization of distributions, correlations, and metrics
 - **TensorFlow / PyTorch** — deep learning frameworks for custom model training
 - **Hugging Face Transformers** — used for fine-tuning and deploying DistilBERT (LLM)
 - **DistilBERT (via Transformers)** — lightweight transformer model fine-tuned for semantic similarity
 - **Large Language Models (LLMs)** — transfer learning from pre-trained transformer models
 - **Joblib** — efficient serialization of trained models for later reuse
-- **JSON / CSV / ZIP** — handling and saving structured datasets and results
-- **Git / GitHub** — version control and project sharing
+- Project functionality was modularized using Object-Oriented Programming (OOP) principles to enhance reusability, scalability, and maintainability of preprocessing, feature engineering, and model training components.
 
 ---
 
