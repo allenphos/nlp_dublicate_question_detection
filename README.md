@@ -1,4 +1,4 @@
-# NLP Duplicate Detection
+# Duplicate Question Detection with NLP
 
 A machine learning project to identify semantically duplicate questions using the Quora dataset. Combines classical ML models and fine-tuned transformer-based architectures.
 
